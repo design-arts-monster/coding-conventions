@@ -6,30 +6,6 @@
 @import './../modules/modules';
 
 /* --------------------------------------------------------------
-# common style
+# base
 -------------------------------------------------------------- */
-html {
-  width: 100%;
-  margin-bottom: 0 !important;
-  overflow-x: hidden;
-  font-size: 100%;
-  background-color: map.get($colors, 'white');
-}
-
-body {
-  font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Arial, 'Yu Gothic', Meiryo, sans-serif;
-  line-height: 1.5;
-  color: map.get($colors, 'black');
-
-  @include font-rem(16);
-
-  @include mq-down('md') {
-    @include font-rem(14);
-  }
-}
-
-img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-}
+@import 'base/base';
